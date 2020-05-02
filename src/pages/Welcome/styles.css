@@ -1,0 +1,36 @@
+html {
+  background-color: rgba(47, 0, 255, 0.548);
+}
+
+
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  align-self: flex-end;
+}
+
+.title {
+  color: #1C354F;
+  font-size: 28;
+  font-weight: bold;
+  text-align: center;
+}
+
+button {
+    padding: 20px;
+    border-radius: 50px;
+    border: 0;
+    background: #2E5B9A;
+    color: #fff;
+    font-size: 0;
+    cursor: pointer;
+    margin-top: 100px;
+}
+
+a {
+  margin-left: 150px;
+}
