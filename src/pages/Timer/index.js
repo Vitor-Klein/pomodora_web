@@ -6,9 +6,9 @@ import './styles.css'
 
 function formatSeconds(seconds) {
   if (seconds < 60) {
-    return `${seconds} seg`
+    return `${seconds}`
   }
-  return `${Math.floor(seconds / 60)} min`
+  return `${Math.floor(seconds / 60)}`
 }
 
 function Timer() {
@@ -26,7 +26,7 @@ function Timer() {
     } else {
       timerRef.current = setInterval(() => {
         setSecondsEllapsed(state => state + 1)
-      }, 100)
+      }, 1)
 
       setTimerEnabled(true)
     }  
@@ -36,12 +36,11 @@ function Timer() {
     <h1 className="title">Pomodora</h1>
     <CircleProgress 
       percentage={formatSeconds(secondsEllapsed)}
-      primaryColor={['#000000', '#000000']} 
+      primaryColor={['#bc1a94', '#bc1a94']} 
       secondaryColor={"#fff"}
       strokeWidth={20}
       width={350}
-      fontColor={"#fff"}
-      
+      fontColor={"#fff"}  
     />
     <button 
       className="button" 

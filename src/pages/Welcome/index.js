@@ -12,7 +12,7 @@ function Welcome() {
     <img src={bannerImg} alt="" className="banner"/>
       <h2 className="title">Staying focused at work isn't easy!</h2>
       
-      <Link to="/Timer"><button className="button"><MdChevronRight size={32} /></button></Link>
+      <Link to="/Timer"><button><MdChevronRight size={32} /></button></Link>
     </div>
   );
 }
